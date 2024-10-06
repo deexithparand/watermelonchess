@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.boardImg{
+    opacity: 0.8;
+}
+
+/*to handle relative positioning*/
+.boardHandler{
+    position: relative;
+    display: inline-block;  
+}
+
+.gamediv{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+
+    /*satisfy distance in laptop screen*/
+    margin-top: 50px;
+}
+
+/* Safari syntax */
+.point{
+    position:absolute;
+    height: 30px;
+    width: 30px;
+    padding: 5px;   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease;
+}
+
+.point > p{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    font-size:large;
+}
+
+.latestMoves{
+    position: absolute;
+    top:20px;
+    right:20px;
+    text-align: center;
+
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCA797;
+}
